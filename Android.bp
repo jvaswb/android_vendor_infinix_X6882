@@ -56,7 +56,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -106,7 +105,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -156,7 +154,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -258,7 +255,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -458,7 +454,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -496,7 +491,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -504,6 +498,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libhevce_sb.ca7.android",
     owner: "infinix",
+    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -535,7 +530,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -892,6 +886,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvcodec_oal",
     owner: "infinix",
+    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -924,7 +919,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -1448,6 +1442,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libthha",
     owner: "infinix",
+    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -1466,7 +1461,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -1582,6 +1576,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvp8enc_sa.ca7",
     owner: "infinix",
+    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -1599,7 +1594,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
-    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -19118,6 +19112,7 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvideofilmeffect",
     owner: "infinix",
+    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -32500,6 +32495,7 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
+    allow_undefined_symbols: true,
     target: {
         android_arm64: {
             srcs: [
@@ -32516,6 +32512,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    check_elf_files: false,
     relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
