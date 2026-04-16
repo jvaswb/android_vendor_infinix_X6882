@@ -56,6 +56,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -105,6 +106,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -154,6 +156,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -172,7 +175,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libhidlbase",
                 "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
                 "libc",
                 "libutils",
                 "libcutils",
@@ -190,7 +193,7 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libhidlbase",
                 "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
                 "libc",
                 "libutils",
                 "libcutils",
@@ -255,6 +258,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -454,6 +458,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -491,6 +496,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -498,7 +504,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libhevce_sb.ca7.android",
     owner: "infinix",
-    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -530,6 +535,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -886,7 +892,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvcodec_oal",
     owner: "infinix",
-    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -919,6 +924,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "both",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -1111,7 +1117,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.videotelephony@1.0",
+    name: "vendor.mediatek.hardware.videotelephony@1.0_vendor",
+    stem: "vendor.mediatek.hardware.videotelephony@1.0",
     owner: "infinix",
     strip: {
         none: true,
@@ -1442,7 +1449,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libthha",
     owner: "infinix",
-    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -1461,6 +1467,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -1576,7 +1583,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvp8enc_sa.ca7",
     owner: "infinix",
-    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -1594,6 +1600,7 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "32",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -2250,61 +2257,6 @@ cc_prebuilt_library_shared {
                 "libdrm",
                 "libkaraoke",
                 "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "audio.r_submix.mediatek",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libmedia_helper",
-                "libutils",
-                "libnbaio_mono",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    relative_install_path: "hw",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "awinic.audio.effect",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/hw/awinic.audio.effect.so",
-            ],
-            shared_libs: [
-                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -19112,7 +19064,6 @@ cc_prebuilt_library_shared {
 cc_prebuilt_library_shared {
     name: "libvideofilmeffect",
     owner: "infinix",
-    allow_undefined_symbols: true,
     strip: {
         none: true,
     },
@@ -32495,7 +32446,6 @@ cc_prebuilt_library_shared {
     strip: {
         none: true,
     },
-    allow_undefined_symbols: true,
     target: {
         android_arm64: {
             srcs: [
@@ -32512,7 +32462,6 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
-    check_elf_files: false,
     relative_install_path: "mt6789",
     prefer: true,
     soc_specific: true,
@@ -34275,38 +34224,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so",
             ],
             shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "vendor.mediatek.hardware.audio@6.1",
-    owner: "infinix",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so",
-            ],
-            shared_libs: [
-                "android.hardware.audio.common@6.0",
-                "android.hardware.audio.effect@6.0",
-                "android.hardware.audio@6.0",
-                "android.hidl.safe_union@1.0",
                 "libhidlbase",
                 "liblog",
                 "libutils",
@@ -36271,15 +36188,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "manifest_media_c2_V1_2_default.xml",
-    owner: "infinix",
-    src: "proprietary/vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml",
-    filename_from_src: true,
-    sub_dir: "vintf/manifest",
-    soc_specific: true,
-}
-
-prebuilt_etc_xml {
     name: "vendor.silead.hardware.fingerprintext@1.0-service.xml",
     owner: "infinix",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.silead.hardware.fingerprintext@1.0-service.xml",
@@ -36534,49 +36442,6 @@ cc_prebuilt_binary {
                 "android.hardware.gnss.visibility_control@1.0",
                 "android.hardware.gnss-V1-ndk",
                 "android.hardware.gnss-impl-mediatek",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    relative_install_path: "hw",
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "android.hardware.media.c2@1.2-mediatek-64b",
-    owner: "infinix",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b",
-            ],
-            shared_libs: [
-                "libstagefright_foundation-v33",
-                "libbase",
-                "liblog",
-                "libcodec2",
-                "libutils",
-                "android.hardware.media.c2@1.0",
-                "android.hardware.media.c2@1.1",
-                "android.hardware.media.c2@1.2",
-                "libcodec2_hidl@1.0",
-                "libcodec2_hidl@1.1",
-                "libcodec2_hidl@1.2",
-                "libcodec2_vndk",
-                "libhidlbase",
-                "libavservices_minijail",
-                "libbinder",
-                "libcodec2_mtk_c2store",
-                "libcodec2_mtk_vdec",
-                "libcodec2_mtk_venc",
                 "libc++",
                 "libc",
                 "libm",
@@ -37132,7 +36997,7 @@ cc_prebuilt_binary {
                 "liblog",
                 "libbase",
                 "libfmq",
-                "vendor.mediatek.hardware.videotelephony@1.0",
+                "vendor.mediatek.hardware.videotelephony@1.0_vendor",
                 "libhardware",
                 "libhwbinder",
                 "libhidlbase",
@@ -37803,13 +37668,6 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/hw/audio.primary.mt6789.so",
     symlink_target: "/vendor/lib64/hw/audio.primary.mediatek.so",
-}
-
-install_symlink {
-    name: "vendor_lib64_hw_audio_r_submix_mt6789_so",
-    soc_specific: true,
-    installed_location: "lib64/hw/audio.r_submix.mt6789.so",
-    symlink_target: "/vendor/lib64/hw/audio.r_submix.mediatek.so",
 }
 
 install_symlink {

@@ -742,7 +742,6 @@ PRODUCT_COPY_FILES += \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.gnss-service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss-service.mediatek.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
-    vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service-tms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service-tms.rc \
     vendor/infinix/X6882/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
@@ -978,7 +977,7 @@ PRODUCT_PACKAGES += \
     libwo \
     arm.graphics-V1-ndk_platform \
     libmtk_drvb \
-    vendor.mediatek.hardware.videotelephony@1.0 \
+    vendor.mediatek.hardware.videotelephony@1.0_vendor \
     libHEVCdec_sa.ca7.android \
     libh264dec_customize \
     libh264dec_sa.ca7 \
@@ -1015,8 +1014,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
     audio.primary.mediatek \
-    audio.r_submix.mediatek \
-    awinic.audio.effect \
     fingerprint.silead.default \
     gf_fingerprint.default \
     gps.default \
@@ -2156,7 +2153,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.apuware.apusys@2.1 \
     vendor.mediatek.hardware.apuware.hmp@1.0 \
     vendor.mediatek.hardware.apuware.utils@2.0 \
-    vendor.mediatek.hardware.audio@6.1 \
     vendor.mediatek.hardware.audio@7.1 \
     vendor.mediatek.hardware.camera.atms@1.0 \
     vendor.mediatek.hardware.camera.bgservice@1.0 \
@@ -2231,7 +2227,6 @@ PRODUCT_PACKAGES += \
     manifest_cameraprovider.xml \
     manifest_goodix.xml \
     manifest_hwcomposer.xml \
-    manifest_media_c2_V1_2_default.xml \
     vendor.silead.hardware.fingerprintext@1.0-service.xml \
     vendor.transsion.hardware.trancam.trancamserver@1.0.xml \
     ccci_mdinit \
@@ -2242,7 +2237,6 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gnss-service.mediatek \
-    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks-shim-service-mtk \
     android.hardware.nfc@1.2-service-tms \
     android.hardware.secure_element@1.2-service-mediatek \
@@ -2292,7 +2286,6 @@ PRODUCT_PACKAGES += \
     vendor_lib_libvpudv3a_vcodec_so \
     vendor_lib64_egl_libGLES_mali_so \
     vendor_lib64_hw_audio_primary_mt6789_so \
-    vendor_lib64_hw_audio_r_submix_mt6789_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_trustonic_so \
     vendor_lib64_hw_gatekeeper_default_so \
